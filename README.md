@@ -1,7 +1,7 @@
 # SpotifyBot
+The goal of this project is to create a music bot that can join discord servers and connect to spotify. Users should be able to play a single track upon user requests, create a queue of song requests if multiple are submitted at once, or to play an entire playlist if desired. The bot should function similar to the Rythm discord botm, but should rely on spotify rather than Youtube. 
 
-# Goal:
-Create a music bot that can join servers and connect to spotify. The general idea is to play single tracks upon user requests or to play an entire playlist. 
+-----
 
-# Useful Links
+### Useful Links
 API Documentation: https://johnnycrazy.github.io/SpotifyAPI-NET/docs/introduction/
