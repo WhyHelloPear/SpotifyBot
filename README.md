@@ -5,5 +5,7 @@ The goal of this project is to create a music bot that can join discord servers 
 
 ### Useful Links
 Discord .NET Documentation: https://docs.stillu.cc/api/index.html
+
 API Documentation: https://johnnycrazy.github.io/SpotifyAPI-NET/docs/introduction/
+
 Discord Bot Documentaion: https://docs.stillu.cc/guides/getting_started/first-bot.html
