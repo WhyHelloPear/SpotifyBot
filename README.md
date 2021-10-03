@@ -9,3 +9,5 @@ Discord .NET Documentation: https://docs.stillu.cc/api/index.html
 API Documentation: https://johnnycrazy.github.io/SpotifyAPI-NET/docs/introduction/
 
 Discord Bot Documentaion: https://docs.stillu.cc/guides/getting_started/first-bot.html
+
+Password Management: https://medium.com/@hammadarif/how-to-safely-manage-passwords-in-net-applications-a546a481c41c
