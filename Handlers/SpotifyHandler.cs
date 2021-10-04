@@ -4,14 +4,12 @@ using System.Threading.Tasks;
 
 namespace SpotifyBot
 {
-    class SpotifyHandler
+    public class SpotifyHandler
     {
-        private string _token;
         public SpotifyClient _client;
 
         public SpotifyHandler( string token )
         {
-            _token = token;
             _client = new SpotifyClient( token );
         }
 

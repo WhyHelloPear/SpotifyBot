@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Configuration;
+using System.Diagnostics;
+using System.IO;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Discord;
 using Discord.WebSocket;
 using DiscordSpotify;
@@ -9,10 +13,26 @@ namespace SpotifyBot
 {
     public class Program
     {
-        public static async Task Main()
+        private string _spotifyToken;
+        private string _discordToken;
+        public static void Main( string[] args )
         {
-            Bot spotifyBot = new Bot( "token", "token");
+            new Program().MainAsync().GetAwaiter().GetResult();
+        }
+        public async Task MainAsync()
+        {
+            Setup();
+            SpotifyDiscordBot spotifyBot = new SpotifyDiscordBot( "token", "token" );
             await spotifyBot.StartBot();
+        }
+
+        private void Setup()
+        {
+            var _spotifyToken = ConfigurationManager.AppSettings["SpotifyToken"];
+            var _discordToken = ConfigurationManager.AppSettings["DiscordToken"];
+
+            //_spotifyToken;
+            //_discordToken;
         }
     }
 }

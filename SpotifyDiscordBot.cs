@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DiscordSpotify
 {
-    public class Bot
+    public class SpotifyDiscordBot
     {
         private SpotifyHandler _spotifyHandler;
         private DiscordHandler _discordHandler;
-        public Bot( string spotifyToken, string discordToken )
+        public SpotifyDiscordBot( string spotifyToken, string discordToken )
         {
             _spotifyHandler = new SpotifyHandler( spotifyToken );
             _discordHandler = new DiscordHandler( discordToken );
