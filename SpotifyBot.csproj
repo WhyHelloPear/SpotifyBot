@@ -37,10 +37,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bot.cs" />
-    <Compile Include="DiscordHandler.cs" />
+    <Compile Include="Handlers/*" />
+    <Compile Include="SpotifyDiscordBot.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="SpotifyHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Discord.Net.Commands, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -67,9 +66,11 @@
     <Reference Include="SpotifyAPI.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\SpotifyAPI.Web.6.2.1\lib\netstandard2.0\SpotifyAPI.Web.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Interactive.Async, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>packages\System.Interactive.Async.4.0.0\lib\net461\System.Interactive.Async.dll</HintPath>
     </Reference>
